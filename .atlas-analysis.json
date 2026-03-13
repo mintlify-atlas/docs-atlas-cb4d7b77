@@ -1,0 +1,157 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "Alfresco Ubuntu Installer",
+  "projectDescription": "Automated installation scripts for deploying Alfresco Content Services Community Edition on Ubuntu using ZIP distribution files.",
+  "theme": "aspen",
+  "primaryColor": "#242b59",
+  "lightColor": "#8c94ac",
+  "darkColor": "#c8c6d3",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "architecture",
+              "prerequisites",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Installation",
+            "pages": [
+              "installation/overview",
+              "installation/configuration",
+              "installation/version-profiles",
+              "installation/scripts"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment",
+              "configuration/memory-management",
+              "configuration/security"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "operations/service-management",
+              "operations/verification",
+              "operations/backup-restore",
+              "operations/troubleshooting"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/multi-machine",
+              "advanced/addons",
+              "advanced/https-setup"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Components",
+        "groups": [
+          {
+            "group": "Core Services",
+            "pages": [
+              "components/alfresco-repository",
+              "components/alfresco-share",
+              "components/content-app"
+            ]
+          },
+          {
+            "group": "Infrastructure",
+            "pages": [
+              "components/postgresql",
+              "components/tomcat",
+              "components/nginx"
+            ]
+          },
+          {
+            "group": "Services",
+            "pages": [
+              "components/solr",
+              "components/activemq",
+              "components/transform-service"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Script Reference",
+        "groups": [
+          {
+            "group": "Setup Scripts",
+            "pages": [
+              "scripts/00-generate-config",
+              "scripts/01-install-postgres",
+              "scripts/02-install-java",
+              "scripts/03-install-tomcat",
+              "scripts/04-install-activemq"
+            ]
+          },
+          {
+            "group": "Alfresco Scripts",
+            "pages": [
+              "scripts/05-download-resources",
+              "scripts/06-install-alfresco",
+              "scripts/07-install-solr",
+              "scripts/08-install-transform",
+              "scripts/09-build-aca",
+              "scripts/10-install-nginx"
+            ]
+          },
+          {
+            "group": "Management Scripts",
+            "pages": [
+              "scripts/11-start-services",
+              "scripts/12-stop-services",
+              "scripts/13-backup",
+              "scripts/14-restore",
+              "scripts/15-install-addons"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Automated installation scripts for complete Alfresco deployment",
+    "Multiple version profiles (7.4 LTS, 23.x, 25.x)",
+    "Automatic memory tuning based on system resources",
+    "Multi-machine deployment support with distributed architecture",
+    "Integrated backup and restore functionality",
+    "Add-on management (AMP and JAR modules)",
+    "Service lifecycle management with health checks",
+    "HTTPS/TLS 1.3 configuration support",
+    "PostgreSQL automatic tuning",
+    "Complete component stack (PostgreSQL, Tomcat, ActiveMQ, Solr, Transform, Nginx)"
+  ],
+  "publicApiSurface": [
+    "00-generate-config.sh - Generate secure configuration with random passwords",
+    "01-install_postgres.sh - Install and configure PostgreSQL database",
+    "02-install_java.sh - Install OpenJDK runtime",
+    "03-install_tomcat.sh - Install Apache Tomcat application server",
+    "04-install_activemq.sh - Install Apache ActiveMQ message broker",
+    "05-download_alfresco_resources.sh - Download Alfresco distribution files",
+    "06-install_alfresco.sh - Install Alfresco Repository and Share",
+    "07-install_solr.sh - Install Alfresco Search Services (Solr)",
+    "08-install_transform.sh - Install Transform Service with LibreOffice",
+    "09-build_aca.sh - Build Alfresco Content App frontend",
+    "10-install_nginx.sh - Install and configure Nginx reverse proxy",
+    "11-start_services.sh - Start all services in correct order with health checks",
+    "12-stop_services.sh - Stop all services gracefully in reverse order",
+    "13-backup.sh - Create full or partial backups (database, content, config, solr)",
+    "14-restore.sh - Restore from backup archives",
+    "15-install_addons.sh - Install AMP and JAR add-ons",
+    "common.sh - Shared functions and configuration loading"
+  ]
+}
